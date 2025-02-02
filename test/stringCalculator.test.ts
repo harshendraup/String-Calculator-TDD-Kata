@@ -8,5 +8,8 @@ describe('String Calculator', () => {
     test('returns the number itself when input is a single number', () => {
       expect(add('1')).toBe(1);
     });
-  });
   
+    test('returns the sum of multiple numbers separated by commas', () => {
+      expect(add('1,5')).toBe(6);
+    });
+  });

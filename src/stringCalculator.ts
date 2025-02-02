@@ -5,5 +5,4 @@ export function add(numbers: string): number {
   
     const numberArray = numbers.split(',').map(Number);
     return numberArray.reduce((sum, num) => sum + num, 0);
-  }
-  
+  }  
