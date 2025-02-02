@@ -20,4 +20,8 @@ describe('String Calculator', () => {
     test('returns the sum of numbers with a custom delimiter', () => {
       expect(add('//;\n1;2')).toBe(3);
     });
-  });
+  
+    test('throws error for negative numbers', () => {
+      expect(() => add('1,-2,3')).toThrow('negative numbers are not allowed: -2');
+    });
+  });  
