@@ -12,4 +12,9 @@ describe('String Calculator', () => {
     test('returns the sum of multiple numbers separated by commas', () => {
       expect(add('1,5')).toBe(6);
     });
+  
+    test('returns the sum of numbers separated by newlines and commas', () => {
+      expect(add('1\n2,3')).toBe(6);
+    });
   });
+  
